@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+/* font-family: 'Dongle', sans-serif; */
+
+/* border-box: prevent padding to go beyond the size of initial html page (no scroll) */
+html {
+    box-sizing: border-box; 
+}
+
+/* we want no margin in the body and entire screen taken at the background color */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23000000' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+    font-family: 'Dongle', 'sans-serif';
+    font-size:1.75rem;
+    text-align: center;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quote-container {
+    width:auto;
+    max-width:900px;
+    padding:20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote_text {
+    font-size: 2.75rem;
+}
+
+.long-quote {
+    font-size:2rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+
+.quote-author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight:400;
+    font-style: italic;
+}
+
+
+.button-container {
+    margin-top:15px;
+    display:flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor:pointer;
+    font-size:1.2rem;
+    height:2.5rem;
+    border:none;
+    border-radius:10px;
+    color:#fff;
+    background:#333;
+    outline:none;
+    padding:0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+    filter:brightness(110%);
+}
+
+button:active {
+    transform: translate(0 0.3rem);
+    box-shadow: 0 0.1rem rgba(255,255,255,0.65);
+}
+
+.twitter-button:hover {
+    color:#38a1f3;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* le rond */
+    border-top: 16px solid #3498db; /* la partie foncé sur le rond*/
+    border-radius: 50%; /* création d'un cercle (on peux déterminer sa heuteur et largeur ci-dessous)*/
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite; /* la durée de l'animation et sa nature (spin) */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Media Query */
+
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+
+    .quote-text {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* Mon apprentissage: 
+
+- outline sert à enlever la couleur bleue (attention : voir si pas déprécié). 
+- Media query (screen c'est pour dire que c'est sur écran; et 1000px englobe portable et tablettes). 
+- On a voulu faire attention à la margin left/right lors du passage sur écran + petit. 
+- Unité rem est + responsive et s'adapte lors des changement de taille d'écran (relatif). 
+- Button : pas oublier le border:none qui permet de supprimer la bordure par défault. 
+- Action sur le bouton : hover effect and active effect. Bien supp. la hauteur du bow-shadow avec transform:translate()
+- Couleur officiel de twitter à conserver (voir sur leur charte graphique en ligne).
+
+- Animation du loader : on doit créer d'abord un rond avec une partie plus foncé (avec border-radius on fait un rond).
+- Et on ajoute une animation de type spin 
+- Pour l'animation : on contrôle les étapes de l'animation avec un keyframe (voir détail sur MDN). 
+En l'occurence du début où la partie foncé reste fixe (ne rotate pas) puis à la fin de l'animation : a changé de 360 degré. (faire un tour).
+
+*/
