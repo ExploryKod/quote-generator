@@ -90,12 +90,12 @@ button:active {
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* le rond */
-    border-top: 16px solid #3498db; /* la partie foncé sur le rond*/
-    border-radius: 50%; /* création d'un cercle (on peux déterminer sa heuteur et largeur ci-dessous)*/
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%; 
     width: 120px;
     height: 120px;
-    animation: spin 2s linear infinite; /* la durée de l'animation et sa nature (spin) */
+    animation: spin 2s linear infinite; 
   }
   
   @keyframes spin {
@@ -115,21 +115,21 @@ button:active {
     }
 }
 
-
-
-/* Mon apprentissage: 
+/* Notes pour laisser des traces de mon apprentissage sur ce projet: 
 
 - outline sert à enlever la couleur bleue (attention : voir si pas déprécié). 
-- Media query (screen c'est pour dire que c'est sur écran; et 1000px englobe portable et tablettes). 
+- Media query (screen c'est pour dire que c'est sur écran; et 1000px englobe portables et tablettes). 
 - On a voulu faire attention à la margin left/right lors du passage sur écran + petit. 
 - Unité rem est + responsive et s'adapte lors des changement de taille d'écran (relatif). 
-- Button : pas oublier le border:none qui permet de supprimer la bordure par défault. 
-- Action sur le bouton : hover effect and active effect. Bien supp. la hauteur du bow-shadow avec transform:translate()
-- Couleur officiel de twitter à conserver (voir sur leur charte graphique en ligne).
+- Button : pas oublier le "border:none" qui permet de supprimer la bordure par défault. 
+- Action sur le bouton : hover effect and active effect. La hauteur du box-shadow est géré avec transform:translate().
+- Couleur officielle de twitter à conserver (voir sur leur charte graphique en ligne).
 
-- Animation du loader : on doit créer d'abord un rond avec une partie plus foncé (avec border-radius on fait un rond).
-- Et on ajoute une animation de type spin 
+- Animation du loader : on doit créer d'abord un rond avec une partie plus foncée (avec border-radius on fait un rond).
+- Et on ajoute une animation de type "spin". 
 - Pour l'animation : on contrôle les étapes de l'animation avec un keyframe (voir détail sur MDN). 
-En l'occurence du début où la partie foncé reste fixe (ne rotate pas) puis à la fin de l'animation : a changé de 360 degré. (faire un tour).
+En l'occurence le keyframe gère: 
+- Début où la partie la plus opaque reste fixe (pas de rotation). 
+- A la fin l'animation a tournée de 360 degrés. 
 
 */
