@@ -6,7 +6,7 @@ A project from a course, <a href="https://www.udemy.com/course/javascript-web-pr
 
 ## Learning goals 
 
-I didn't erased my comments I added below the code in the js file in order to shaw what was my reflexions in learning. 
+I didn't erased my comments I added below the code in the js file in order to shaw what was my reflexions in learning.  
   
 - Mastering some basic javascripts concepts and first steps using DOM API;
 - Using an API from the web to generate quotes : first steps with javascript and APIs;
@@ -15,4 +15,4 @@ I didn't erased my comments I added below the code in the js file in order to sh
 ## Technologies used : 
 - HTML / CSS 
 - Javascript 
-- API generating quotes : created by type.fit (a web application) and used in this project.<br/> 
+- API generating quotes : you can find it at this <a href="https://github.com/ssokurenko/quotes-react-app">github address</a><br/> 
